@@ -1,8 +1,14 @@
+package javaclasses;
+
 import java.util.Arrays;
+import javaclasses.Room;
+import javaclasses.Bedroom;
+
 
 class Main{
     public static void main(String[] args){
         System.out.println("Program Begins");
+        createRoom();
         sortingDemo();
     }
 
@@ -53,7 +59,7 @@ class Main{
         System.out.println("Sorting...");
         array = sortArray(array);
         System.out.println("Sorted array - " + Arrays.toString(array));
-        
+
         
     }
 

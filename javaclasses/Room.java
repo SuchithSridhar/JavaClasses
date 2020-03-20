@@ -1,3 +1,4 @@
+package javaclasses;
 class Room{
     int height;
     int length;
