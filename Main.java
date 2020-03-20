@@ -43,11 +43,34 @@ class Main{
         int[] array = {12,16,2,8,11};
 
         example[1] = 1;
-        
+
         System.out.println("--------------------"
         + " Sorting Demo "
         + "--------------------");
 
-        System.out.println(Arrays.toString(array));
+
+        System.out.println("Initial array - " + Arrays.toString(array));
+        System.out.println("Sorting...");
+        array = sortArray(array);
+        System.out.println("Sorted array - " + Arrays.toString(array));
+        
+        
+    }
+
+    static int[] sortArray(int[] array){
+        int n = array.length;
+        int temp, j;
+        for(int i=0; i<n; i++){
+            temp = array[i];
+            j = i - 1;
+            while(j>=0 && array[j]>temp){
+                array[j+1]=array[j];
+                j--;
+            }
+            array[j+1] = temp;
+
+        }
+
+        return array;
     }
 }
