@@ -1,9 +1,6 @@
 package javaclasses;
 
 import java.util.Arrays;
-import javaclasses.Room;
-import javaclasses.Bedroom;
-
 
 class Main{
     public static void main(String[] args){
