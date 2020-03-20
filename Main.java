@@ -1,5 +1,3 @@
-
-
 class Main{
     public static void main(String[] args){
         System.out.println("Program Begins");
@@ -11,5 +9,10 @@ class Main{
         System.out.println("The area of the room : "+ my_room.area());
         System.out.println("The volume of the room : "+my_room.volume());
         System.out.println("The height of the room : " + my_room.height);
+
+        System.out.println();
+
+        Bedroom newroom = new Bedroom(10, 10, 4, 22);
+        newroom.specifications();
     }
 }
